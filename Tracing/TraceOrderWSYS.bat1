@@ -1,0 +1,3 @@
+REM TKPROF SORT IN ORDER OF EXECUTION
+for %%1 in (*.trc) do call tkprof.exe %%~n1.trc %%~n1.ordsys.txt SYS=YES
+pause

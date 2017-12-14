@@ -1,0 +1,4 @@
+REM TKPROF CREATE A LIST OF ALL SQL RUN IN TRACE
+REM
+for %%1 in (*.trc) do call tkprof.exe %%~n1.trc %%~n1.txt SYS=YES RECORD=%%~n1.sql
+pause

@@ -1,0 +1,2 @@
+REM TKPROF SORT IN ORDER OF Performance
+for %%1 in (*.trc) do call tkprof.exe %%~n1.trc %%~n1.prfsys.txt SYS=Yes SORT=(prsela,exeela,fchela)
